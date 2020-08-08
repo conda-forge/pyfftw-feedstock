@@ -1,10 +1,3 @@
-travis:
-  secure:
-    BINSTAR_TOKEN: eVmEO6bJ7nJfYJTLpUuD5PsjJbxyLDfnW7hCcZTP7GPDLWd0PERnd444FyuhjTnFLMVZt3/lvAOz/zXODwd15umLLzaF7BpZ1SrfDfqYTeA8wvjOl/QLJfVq3dU2WsGEi/HycrvmuelXU1dztzkaJ4AvGHkPdhcPVIZsQnS6U8x8RE2LJFBzfHEVPaK+h0A/5QggTKSHpHuJW+5i9IeYO60ZvcJ0uAcBiDoiCGzZ9574qcB8m67mW12ToGhAJIUVHe84pYJ8FEy19aQX5asulafd0WZ9uQs/PU9I8pj/xolA2IeYYg5OqMlfGZ3PqkFUelxSFWN+d16oXbQkybHbbKuOZsG3dar3si1g+Do1/xbpFgmDj2r51isY46QOTtClWumf/thfZwW1IQkvH7e8QosAy8aWJcml3CYIO255FH+BXmWwc/XgNJBAor69/WdPDtRyPlzj0EbMPi3Rd0/wvFsA+pLLvWgN69JNw/6dfY4X3hSlvj53Vi6L2HaUismird06AuSMbJajTI5R/ndyMkwHw3tcfsGAnCngmTQEGsvuNDyX83iMKUfvWV4rG1nuWSBmjzJvXomqsvkQWjb+yPB4pk/oeCpZxQNcMjdLYqbg5ytJ91NHn+YwozKn+hgzbpV+Bz0H+p/SJfjtW3+wLrfUG4tjQ53w+bQoDgOvHTo=
-appveyor:
-  secure:
-    BINSTAR_TOKEN: ipv/06DzgA7pzz2CIAtbPxZSsphDtF+JFyoWRnXkn3O8j7oRe3rzqj3LOoq2DZp4
-
 channels:
   targets:
   - [conda-forge, test]
