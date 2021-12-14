@@ -1,5 +1,5 @@
 {% set name = "pyFFTW" %}
-{% set version = "0.12.0" %}
+{% set version = "0.13.0" %}
 {% set sha256 = "60988e823ca75808a26fd79d88dbae1de3699e72a293f812aa4534f8a0a58cb0" %}
 
 package:
@@ -7,12 +7,13 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  # fn: {{ name }}-{{ version }}.tar.gz
+  git_url: https://github.com/JeppeKlitgaard/pyFFTW.git
+  git_rev: cibuildwheel
   sha256: {{ sha256 }}
 
 build:
-  number: 3
+  number: 4
 
 requirements:
   build:
@@ -31,7 +32,7 @@ requirements:
     - python
     - {{ pin_compatible('numpy') }}
     # only need fftw at run-time if static linking was not used
-    - fftw  # [win]
+    - fftw
 
 
 about:
