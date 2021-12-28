@@ -25,6 +25,7 @@ requirements:
     - cython
     - python
     - pip
+    - setuptools <=59.4  # [osx]
     - numpy
     - fftw
   run:
