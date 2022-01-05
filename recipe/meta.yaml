@@ -31,6 +31,7 @@ requirements:
   run:
     - python
     - {{ pin_compatible('numpy') }}
+      # only need fftw at run-time if static linking was not used
     - fftw  # [win]
 
 
