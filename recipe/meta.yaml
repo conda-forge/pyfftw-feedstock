@@ -31,7 +31,7 @@ requirements:
   run:
     - python
     - {{ pin_compatible('numpy') }}
-    - fftw
+    - fftw  # [win]
 
 
 about:
