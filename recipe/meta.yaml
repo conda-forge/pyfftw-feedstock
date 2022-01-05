@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: True  # [py<39 and arm64]"
 
 requirements:
@@ -31,7 +31,8 @@ requirements:
   run:
     - python
     - {{ pin_compatible('numpy') }}
-    - fftw
+      # only need fftw at run-time if static linking was not used
+    - fftw  # [win]
 
 
 about:
