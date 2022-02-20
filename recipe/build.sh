@@ -12,6 +12,9 @@ if [[ `uname` == 'Linux' ]]; then
     # -Bsymbolic link flag to ensure MKL FFT routines don't shadow FFTW ones.
     # see:  https://github.com/pyFFTW/pyFFTW/issues/40
     export CFLAGS="$CFLAGS -Wl,-Bsymbolic"
+
+    # attempt workaround for -pthread not getting added by setup.py
+    export CFLAGS="$CFLAGS -pthread"
 fi
 
 $PYTHON -m pip install . --no-deps --ignore-installed -vvv
