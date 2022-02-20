@@ -2,9 +2,6 @@
 
 export C_INCLUDE_PATH=$PREFIX/include  # required as fftw3.h installed here
 
-# define STATIC_FFTW_DIR so the patched setup.py will statically link FFTW
-export STATIC_FFTW_DIR=$PREFIX/lib
-
 # define PYFFTW_USE_PTHREADS so that we do not use the openmp version
 export PYFFTW_USE_PTHREADS=1
 
