@@ -22,20 +22,17 @@ requirements:
     - cython                                 # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
-    - llvm-openmp  # [osx]
   host:
     - cython
     - python
     - pip
     - numpy
     - fftw
-    - llvm-openmp  # [osx]
   run:
     - python
     - {{ pin_compatible('numpy') }}
       # only need fftw at run-time if static linking was not used
     - fftw  # [win]
-    - llvm-openmp  # [osx]
 
 
 about:
