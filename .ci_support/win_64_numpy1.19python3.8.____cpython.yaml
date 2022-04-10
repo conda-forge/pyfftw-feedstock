@@ -7,7 +7,7 @@ channel_targets:
 fftw:
 - '3'
 numpy:
-- '1.18'
+- '1.19'
 pin_run_as_build:
   fftw:
     max_pin: x
