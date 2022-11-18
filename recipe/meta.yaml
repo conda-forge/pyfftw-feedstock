@@ -10,9 +10,11 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    - no-system-include.patch
 
 build:
-  number: 2
+  number: 3
   skip: True  # [py<39 and arm64]"
 
 requirements:
@@ -27,12 +29,11 @@ requirements:
     - python
     - pip
     - numpy
-    - fftw
+    - fftw  # [win]
+    - fftw-static  # [not win]
   run:
     - python
     - {{ pin_compatible('numpy') }}
-      # only need fftw at run-time if static linking was not used
-    - fftw  # [win]
 
 
 about:

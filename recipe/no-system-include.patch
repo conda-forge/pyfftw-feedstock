@@ -1,0 +1,14 @@
+diff --git a/setup.py b/setup.py
+index a424cd9..b040668 100755
+--- a/setup.py
++++ b/setup.py
+@@ -84,9 +84,6 @@ def get_include_dirs():
+     if 'PYFFTW_INCLUDE' in os.environ:
+         include_dirs.append(os.environ['PYFFTW_INCLUDE'])
+ 
+-    if get_build_platform().startswith("linux"):
+-        include_dirs.append('/usr/include')
+-
+     if get_build_platform() in ('win32', 'win-amd64'):
+         include_dirs.append(os.path.join(os.getcwd(), 'include', 'win'))
+ 
