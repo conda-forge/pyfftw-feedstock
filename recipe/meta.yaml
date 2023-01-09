@@ -1,6 +1,6 @@
 {% set name = "pyFFTW" %}
-{% set version = "0.13.0" %}
-{% set sha256 = "da85102405c0bd95d57eb19e99b01a0729d8406cb204c3900894b873784253da" %}
+{% set version = "0.13.1" %}
+{% set sha256 = "09155e90a0c6d0c1f2d1f3668180a7de95fb9f83fef5137a112fb05978e87320" %}
 
 package:
   name: {{ name|lower }}
@@ -14,8 +14,8 @@ source:
     - no-system-include.patch
 
 build:
-  number: 3
-  skip: True  # [py<39 and arm64]"
+  number: 0
+  skip: true  # [py<39 and arm64]
 
 requirements:
   build:
