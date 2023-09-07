@@ -12,6 +12,7 @@ source:
   sha256: {{ sha256 }}
   patches:
     - no-system-include.patch
+    - pass-linker-flags.patch
 
 build:
   number: 0
