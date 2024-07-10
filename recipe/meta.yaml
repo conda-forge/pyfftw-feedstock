@@ -40,7 +40,7 @@ requirements:
 
 about:
   home: http://hgomersall.github.com/pyFFTW/
-  license: BSD or GPL 2
+  license: BSD-3-Clause AND GPL-2.0-or-later
   license_file: LICENSE.txt
   summary: A pythonic wrapper around FFTW, the FFT library, presenting a unified interface for all the supported transforms.
 
