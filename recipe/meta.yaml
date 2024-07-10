@@ -16,7 +16,7 @@ source:
 
 build:
   number: 1
-  skip: true  # [py<39 and arm64]
+  skip: true  # [(py<39 and arm64) or py>311]
 
 requirements:
   build:
