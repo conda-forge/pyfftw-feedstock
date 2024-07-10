@@ -25,6 +25,7 @@ requirements:
     - cython <3                              # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
+    - {{ stdlib('c') }}
   host:
     - cython <3
     - python
