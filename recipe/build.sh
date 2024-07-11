@@ -12,6 +12,10 @@ if [[ `uname` == 'Linux' ]]; then
     # -Bsymbolic link flag to ensure MKL FFT routines don't shadow FFTW ones.
     # see:  https://github.com/pyFFTW/pyFFTW/issues/40
     export CFLAGS="$CFLAGS -Wl,-Bsymbolic"
+else
+    # Apple Clang sets Werror for implicit-function-declaration by default
+    # This causes failures in test builds to probe presence of functions
+    export CFLAGS="$CFLAGS -Wno-error=implicit-function-declaration"
 fi
 
 $PYTHON -m pip install . --no-deps --ignore-installed -vvv
