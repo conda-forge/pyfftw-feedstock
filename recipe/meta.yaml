@@ -15,7 +15,7 @@ source:
     - pass-linker-flags.patch
 
 build:
-  number: 1
+  number: 2
   skip: true  # [(py<39 and arm64) or py>311]
 
 requirements:
@@ -35,7 +35,6 @@ requirements:
     - fftw-static  # [not win]
   run:
     - python
-    - {{ pin_compatible('numpy') }}
 
 
 about:
