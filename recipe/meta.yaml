@@ -34,7 +34,6 @@ requirements:
     - fftw-static  # [not win]
   run:
     - python
-    - {{ pin_compatible('numpy') }}
 
 
 about:
