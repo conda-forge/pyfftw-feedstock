@@ -1,6 +1,6 @@
 {% set name = "pyFFTW" %}
-{% set version = "0.13.1" %}
-{% set sha256 = "09155e90a0c6d0c1f2d1f3668180a7de95fb9f83fef5137a112fb05978e87320" %}
+{% set version = "0.14.0" %}
+{% set sha256 = "a55f94d3da9b5c04de1bc96932a93f922910f3984557931356173a515277b65b" %}
 
 package:
   name: {{ name|lower }}
@@ -8,26 +8,25 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name | lower }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
   patches:
     - no-system-include.patch
-    - pass-linker-flags.patch
 
 build:
-  number: 1
-  skip: true  # [(py<39 and arm64) or py>311]
+  number: 0
+  skip: true  # [py<39]
 
 requirements:
   build:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - cython <3                              # [build_platform != target_platform]
+    - cython >=3                             # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
     - {{ stdlib('c') }}
   host:
-    - cython <3
+    - cython >=3
     - python
     - pip
     - numpy
@@ -35,7 +34,6 @@ requirements:
     - fftw-static  # [not win]
   run:
     - python
-    - {{ pin_compatible('numpy') }}
 
 
 about:
