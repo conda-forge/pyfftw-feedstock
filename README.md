@@ -27,13 +27,6 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_numpy1.22python3.9.____73_pypy</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=867&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyfftw-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_numpy1.22python3.9.____73_pypy" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>linux_64_numpy2.0python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=867&branchName=main">
@@ -62,10 +55,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_aarch64_numpy1.22python3.9.____73_pypy</td>
+              <td>linux_64_numpy2python3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=867&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyfftw-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_numpy1.22python3.9.____73_pypy" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyfftw-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_numpy2python3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -97,10 +90,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_numpy1.22python3.9.____73_pypy</td>
+              <td>linux_aarch64_numpy2python3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=867&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyfftw-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_numpy1.22python3.9.____73_pypy" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyfftw-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_numpy2python3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -132,10 +125,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_numpy1.22python3.9.____73_pypy</td>
+              <td>linux_ppc64le_numpy2python3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=867&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyfftw-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_numpy1.22python3.9.____73_pypy" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyfftw-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_numpy2python3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -167,6 +160,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>osx_64_numpy2python3.13.____cp313</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=867&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyfftw-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_numpy2python3.13.____cp313" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>osx_arm64_numpy2.0python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=867&branchName=main">
@@ -195,10 +195,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_numpy1.22python3.9.____73_pypy</td>
+              <td>osx_arm64_numpy2python3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=867&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyfftw-feedstock?branchName=main&jobName=win&configuration=win%20win_64_numpy1.22python3.9.____73_pypy" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyfftw-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_numpy2python3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -227,6 +227,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=867&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyfftw-feedstock?branchName=main&jobName=win&configuration=win%20win_64_numpy2.0python3.9.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_numpy2python3.13.____cp313</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=867&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyfftw-feedstock?branchName=main&jobName=win&configuration=win%20win_64_numpy2python3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr>
