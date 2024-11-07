@@ -1,6 +1,6 @@
 {% set name = "pyFFTW" %}
-{% set version = "0.14.0" %}
-{% set sha256 = "a55f94d3da9b5c04de1bc96932a93f922910f3984557931356173a515277b65b" %}
+{% set version = "0.15.0" %}
+{% set sha256 = "2f16b9854a40c8fdd10aa5803b24ddc6ab49f9cd559dbd7f07e7d61aa205c1ca" %}
 
 package:
   name: {{ name|lower }}
