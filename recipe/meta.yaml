@@ -14,7 +14,7 @@ source:
     - no-system-include.patch
 
 build:
-  number: 1
+  number: 2
   skip: true  # [py<310]
 
 requirements:
