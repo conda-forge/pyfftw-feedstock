@@ -1,6 +1,6 @@
 {% set name = "pyFFTW" %}
-{% set version = "0.15.0" %}
-{% set sha256 = "2f16b9854a40c8fdd10aa5803b24ddc6ab49f9cd559dbd7f07e7d61aa205c1ca" %}
+{% set version = "0.15.1" %}
+{% set sha256 = "bbcde6d40d165e1cbaf12dde062ebfebe9e43394cac8c166e699ba2c9a4b0461" %}
 
 package:
   name: {{ name|lower }}
@@ -10,12 +10,10 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | lower }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
-  patches:
-    - no-system-include.patch
 
 build:
-  number: 2
-  skip: true  # [py<310]
+  number: 0
+  skip: true  # [py<311]
 
 requirements:
   build:
